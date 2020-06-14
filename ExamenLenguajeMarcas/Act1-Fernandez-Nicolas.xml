@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file../Act3-Fernandez-Nicolas.xslt"?>
+<listado xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./Act2-Fernandez-Nicolas.xsd">
+<usuario estado="activo">
+<apellido>Gonzalez</apellido>
+
+<nombre>Fuz</nombre>
+<nombre>Mgo</nombre>
+
+<fechaRegistro>12/10/2020</fechaRegistro>
+<username>fuz1655</username>
+<!-- Esto es un comentario escrito en un documento XML -->
+</usuario>
+
+<usuario estado="inactivo">
+<apellido>Diaz  </apellido>
+<apellido>serrano</apellido>
+
+<nombre>Fernando</nombre>
+<fechaRegistro>13/04/2020</fechaRegistro>
+
+<username>fernan</username>
+<fechaBaja>12/05/2020</fechaBaja>
+</usuario>
+
+
+<usuario estado="desempleado">
+<apellido>Ruiz</apellido>
+
+<nombre>Jorge</nombre>
+<fechaRegistro>12/6/2020</fechaRegistro>
+<username>jorgito11</username>
+<fechaBaja>14/05/2020</fechaBaja>
+
+</usuario>
+
+<usuario estado="ocupado">
+<apellido>Sangria</apellido>
+<apellido>Huerto</apellido>
+
+<nombre>Petito</nombre>
+<fechaRegistro>1/7/2020</fechaRegistro>
+<username>peti22</username>
+<fechaBaja></fechaBaja>
+</usuario>
+
+
+<usuario estado="activo">
+<apellido>Gonzalez </apellido>
+<apellido>España</apellido>
+<nombre>Ricardio</nombre>
+<nombre>Pepe</nombre>
+<fechaRegistro>22/1/2020</fechaRegistro>
+<username>reycardio</username>
+<fechaBaja>21/12/2020</fechaBaja>
+</usuario>
+
+</listado>
+
