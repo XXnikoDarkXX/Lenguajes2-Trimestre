@@ -1,0 +1,95 @@
+
+/*ESTILOS MENU HAMBURGER*/
+
+
+body{
+    margin: 0;
+    font-family: sans-serif;/*Tipo de fuente*/
+}
+
+header{
+    width: 100%;
+    background:#4E94AB;
+}
+
+#btn-menu{/*Check box*/
+    display: none; /*oculto*/
+}
+
+header label{
+    display: none;
+    widows: 30px;
+    height: 30px;
+}
+
+header label:hover{ /*Evento cuando pasas el raton*/
+    cursor: pointer;/*cambia cursor a manita*/
+    background: rgba(0,0,0,0.3);/*cambia color de fondo, el 3 es la tranparencia*/
+    width: 30px;
+}
+
+
+.menu ul{/*Lista desordenada*/
+    margin: 0;
+    list-style: none;/*Pone los clasicos puntitos de enumeracion de lista */
+    padding: 0;/*Relleno*/
+    display: flex;/*hace q los li sean flexibles, por defecto los alinea horizontal*/
+}
+
+.menu li {
+    border-right: 1px solid #fff;/*Borde*/
+    flex-grow: 1;/*define proporcion de crecimiento*/
+}
+
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+/*es parecido a un if en programacion, se usa para el ancho maximo*/
+/*Este ambito comprende todo lo que sucedera cuando el anccho se menor que el indicado*/
+@media (max-width:768px){
+
+    .imagenMenu{
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    header label{
+        display: block;/*no se oculta, fijo*//
+    }
+
+    header{
+        width: 100%;/*ancho*/
+        background:#fff;
+    }
+
+    .menu{    
+        background:#4E94AB;
+        width: 50%;
+        margin-left: -120%;
+        transition: all 0.5s;/*Tiempo de transicion determinada*/
+    }
+
+    .menu ul{
+        flex-direction: column;/*Cambia a columna en vez de fila*/
+    }
+
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .menu { /*Cuando tenga el checked, busca la clase menu en html*/
+        margin:0;
+    }
+}

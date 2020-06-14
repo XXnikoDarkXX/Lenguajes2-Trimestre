@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estilosxtml.css"?>
+<personas>
+<persona profesion="cantante">
+	<mujer/>
+	<nombre>garco</nombre>
+	<fecha_de_nacimiento>
+		<dia>VAYA;</dia>
+		<mes>6</mes>
+		<año>1996</año>
+	</fecha_de_nacimiento>
+	<ciudad>Pamplona</ciudad>
+</persona>
+<persona profesion="cantante">
+	<mujer/>
+	<nombre>rar</nombre>
+	<fecha_de_nacimiento>
+		<dia>VAYA;</dia>
+		<mes>6</mes>
+		<año>1996</año>
+	</fecha_de_nacimiento>
+	<ciudad>Pamplona</ciudad>
+</persona>
+</personas>

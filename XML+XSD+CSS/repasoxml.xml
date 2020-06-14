@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="repasoEstilos.css"?>
+<GENTE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///F:/1%C2%BADAM/LENGUAJEDEMARCAS/2%C2%BATrimestre/xml/repasoValidador.xsd">
+
+<PERSONA>
+<APELLIDO>Un apellido</APELLIDO>
+<NOMBRE>Un nombre</NOMBRE>
+<APODO>Un apodo</APODO>
+</PERSONA>
+<PERSONA>
+<APELLIDO>Otro apellido</APELLIDO>
+<NOMBRE>Otro nombre</NOMBRE>
+<APODO></APODO>
+</PERSONA>
+</GENTE>

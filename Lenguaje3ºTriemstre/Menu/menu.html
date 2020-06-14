@@ -1,0 +1,244 @@
+
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+
+<head>
+					<!--Importaciones-->
+<!-- IMPORT BOOTSTRAP STYLES -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+<!-- IMPORT BOOTSTRAP SCRIPTS-->
+  <!--jquery-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+ <!--popper-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <!--Script de Boostrap-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+		
+
+
+<!--Estilos botones cuadrados-->
+   <link rel="shortcut icon" href="../favicon.ico"> 
+   <link rel="stylesheet" type="text/css" href="css/demo.css" />
+   <link rel="stylesheet" type="text/css" href="css/common.css" />
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+ <!--Estilos propios-->
+ <link rel="stylesheet" type="text/css" href="./estilos.css">
+
+ <!-- IMPORTAMOS los css de ICONOS EN LA CARPETA ICONOS/css-->
+ <link rel="stylesheet" type="text/css" href="./css/all.min.css">
+
+
+<title>Heladeria</title>
+	         
+<meta name="viewport" content="width=device-width, user-scalable=no, initial scale=1.0, maximum-scale=1.0, minimum-scalee=1.0">
+
+
+<style>
+/* Make the image fully responsive */
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+}
+</style>
+
+</head>
+
+
+					<!---------------BODY----------------->
+
+
+<!--Define el estilo de todo el Body-->
+<body class="site">
+
+					<!--Margen Superior del Body-->
+<div class="separadorBody"></div>
+
+					<!--Cuerpo Primario CABEZERA-->
+
+<div class="container">	
+	<div class="logo"></div>
+			
+			<div class="logo">
+				<h1 style="text-align: left;">Heladeria</h1>
+			</div>
+
+		<!--Imagen-->
+	    <img class="logo" src="./portada.jpg">
+
+	<div class="separadorContainer2"></div>
+	
+		<header>
+					<!--Menu hambuger-->
+  			<input type="checkbox" id="btn-menu">
+  			<label for="btn-menu"><img class="imagenMenu" src="./imagenMenu.png"></label>
+  
+      		<nav class="menu">
+       			<ul>
+         			<li><a href="">Inicio</a></li>
+         			<li><a href="">Nosotros</a></li>
+          			<li><a href="">Conctactar</a></li>
+         			
+        		</ul>
+     		</nav>
+		</header>
+</div>
+	
+					<!--Separador Container-->
+<div class="separadorContainer"></div>
+
+
+					<!--Cuerpo Secundario NUCLEO-->
+<div class="container"> 
+
+					<!--Primera Fila--> 
+	<section class="row">
+
+					<!--Primera Columna --> 	
+	<div class="col-xs-12 col-sm-6 col-md-6">
+		<!--12 si es movil, 7 si es pequeño y 6 media o mas-->
+		<h1>El equipo del trabajo</h1>
+		<p>Somos un equipo de personas que se dedica y trabaja hace más de 40 años al servicio del heladero artesanal a nivel mundial, por lo que disponemos del conocimiento de las principales materias primas y maquinarias que se utilizan en el mundo para la elaboración de Helado Artesanal</p>	
+		<h2>Experiencia</h2>
+		<p>Hemos hecho asesoramiento de más de mil empresas en cuanto a producto, proyectos de inversión, comercialización y movimiento de cash flow de cada nuevo emprendimiento de Helado Artesanal para evaluar su rendimiento tanto a corto como a mediano y largo plazo.
+		A su vez por nuestros cursos han pasado más de setecientas personas que han instalado heladerías en Argentina y en el extranjero con excelentes resultados.</p>
+	</div>
+
+					<!--2º Columna-->
+<div class="columnaImagen col-xs-12 col-sm-6 col-md-6">
+	<div class="imagenCarusel">
+		
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+		 	<!-- Indicators -->
+  			<ul class="carousel-indicators">
+   				<li data-target="#demo" data-slide-to="0" class="active"></li>
+   				<li data-target="#demo" data-slide-to="1"></li>
+   				<li data-target="#demo" data-slide-to="2"></li>
+  			</ul>
+
+ 	 		<!-- The slideshow -->
+  			<div class="carousel-inner">
+  				<!--Imagen-->
+  				<div class="carousel-item active">
+      				<img src="./bocaditos.jpg" style="height:80%" alt="bocaditos" >
+   				</div>
+   				<!--Imagen-->
+   				<div class="carousel-item">
+      				<img src="./helados.jpg" alt="helados" >
+   				</div>
+   				<!--Imagen-->
+  				<div class="carousel-item">      
+     				<img src="./helados2.jpg" alt="helados2" >
+   				</div>
+ 			</div>
+  
+				<!-- Left and right controls -->
+ 				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+ 					<span class="carousel-control-prev-icon"></span>
+ 				</a>
+ 				<a class="carousel-control-next" href="#demo" data-slide="next">
+  					<span class="carousel-control-next-icon"></span>
+				</a>
+		</div>
+	</div>
+</div>
+
+<!--Cierre 1º Fila--> 
+	</section>
+
+
+					<!--2ºFila-->
+	<section class="row">
+		
+					<!--1º Columna-->
+			<div class="col-xs-12 col-sm-7 col-md-8">
+
+				<ul class="ch-grid" >
+					<li>
+						<div class="ch-item ch-img-1" > 
+							<div class="ch-info">
+								<h3>Helado de Brownie </h3>
+								<p> Hecho por Marta<a  target="_blank" href="http://blogmegasilvita.com">Ver receta</a></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-2">
+							<div class="ch-info">
+								<h3>Helado de Vainilla</h3>
+								<p>Hecho por Alfonso <a target="_blank" href="https://www.recetasderechupete.com/helado-casero-de-vainilla/13480/">Ver receta</a></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-3">
+							<div class="ch-info">
+								<h3>Helado Kinder Bueno</h3>
+								<p>Hecho por CVelSid04 <a target="_blank" href="https://gastronomiaycia.republica.com/2017/09/04/helado-de-kinder-bueno/">Ver receta</a></p> 
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+					<!--2º Columna-->
+<div class= "col-xs-12 col-sm-5 col-md-4">
+	<br>
+	<br>
+	<h2>Locos por los helados</h2>
+	<p>MAS DE 100 RECETAS DEL TRADICIONAL HELADO DE CREMA A LOS SORBETES MAS ORIGINALES
+FABIO ASTI ANNA PRANDONI
+REPOSTERÍA
+Este libro le propone más de 100 deliciosas recetas, de las más clásicas a las más originales: de las tradicionales peras a la bella Elena al helado de rosas o de vinagre balsámico. Todo lo que hay que saber para realizar en casa sorbetes, cremas heladas, granizados, polos y otros postres helados... ¡Sólo con evocarlos, se nos hace la boca agua!
+
+</p>
+			<!--Video-->
+			<div class="embed-responsive embed-responsive-16by9">
+ 				<iframe width="700" height="400" src="https://www.youtube.com/embed/o8SMvefgrv4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>		
+</div>
+
+	<div class="clearfix visible-sm-block"></div>
+
+<!--Cierre section cuerpo secundario-->
+	</section>
+<!--Cierre Container Cuerpo Secundario-->
+</div>
+
+
+					<!--Separador de container-->
+<div class="separadorContainer"></div>
+	
+
+					<!--Pie de PaginaS-->
+<div class="container pieFondo">
+	<footer>
+		<span class="copyright fas fa-copyright"></span> Copyright Artesania.com 1970-2020			
+	</footer>
+</div>
+
+
+				<!--Margen Inferior del Body-->
+<div class="separadorBody"></div>
+
+
+
+<!--Importacion iconos.js-->
+<script type="text/javascript" src="./iconos/js/all.min.js"></script>
+
+<!-- Script de jquery.js y bootstrap.js  -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+
+
+</body>
+
+</html>

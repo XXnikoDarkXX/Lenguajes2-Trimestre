@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<acuario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/nicoc/Desktop/XML/esquemaPez.xsd">
+<pez>
+<nombre>Pingi</nombre>
+<edad>1 Año</edad>
+<color>Rojo</color>
+<color>Verde</color>
+</pez>
+
+
+<pez>
+<nombre>Faz</nombre>
+<edad>3 Año</edad>
+<color>Azul</color>
+</pez>
+
+
+<pez>
+<nombre>Nemo</nombre>
+<edad>2 Año</edad>
+<color>Naranja</color>
+</pez>
+
+
+</acuario>
+
+
+

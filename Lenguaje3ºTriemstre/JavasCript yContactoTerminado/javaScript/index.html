@@ -1,0 +1,281 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+   
+<!--Estos dos script deben ir ARRIBA-->
+
+
+
+	<!-- Latest compiled and minified CSS  -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+
+	 
+	<!--Estilos Propios-->
+	<!--Enlaza con css-->
+	<link rel="stylesheet" type="text/css" href="./estilos.css">
+	<link rel="stylesheet" type="text/css" href="./estilosMenu.css">
+
+	<!-- IMPORTAMOS los css de ICONOS EN LA CARPETA ICONOS/css-->
+ 	<link rel="stylesheet" type="text/css" href="./css/all.min.css">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial scale=1.0, maximum-scale=1.0, minimum-scalee=1.0">
+
+	<title>Peces Interactivos</title>
+	         
+<style>
+	/*Sirve para poder ocultar las imagenes, se utilizara despues al insertar 
+	la imagen 	class="oculto"*/
+	.oculto {display:none;}
+
+
+
+
+
+</style>
+ 
+</head>
+
+
+
+<!--BODY-->
+
+<!--Para definir estilos iguales para elementos con el mismo nombre de clase-->
+<body  ng-app="ngAnimate" class="site">
+
+
+
+<!--Sirver para serparar los container por medio de padding-->
+<div class="separadorBody"></div>
+
+
+<!--Cuerpo Primario-->
+<div class="container">
+	<h1 style="text-align: left;">TropicMania</h1>
+		<!--Imagen-->
+	    <img class="logo" src="./acuarioVerde.jpg">
+	    	<div class="separadorBody"></div>
+	<header>
+					<!--Menu hambuger-->
+  			<input type="checkbox" id="btn-menu">
+  			<label for="btn-menu"><img class="imagenMenu" src="./imagenMenu.png"></label>
+  
+      		<nav class="menu"><i class=""></i>
+       			<ul>
+         			<li><a href="http://tropicmania.com/proyecto/index.php"><span style="color: white;" class="fas fa-home"></span> Home</a></li>
+         			<li><a href="http://tropicmania.com/proyecto/contacto"><span style="color: red" class="fas fa-address-book"></span> Contacto</a></li>
+          			<li><a href="http://tropicmania.com/proyecto/index.php/site-map/articles/80-prueba-categorias/72-tema"><span style="color: #00ff32;" class="fas fa-fish"></span> Tema</a></li>
+         			<li><a href=""><span style="color: purple;" class="fas fa-image"></span> Museo Interactivo</a></li>
+         			<li><a href=""><span style="color: pink;" class="fas fa-ice-cream"></span> Helado</a></li>
+        		</ul>
+     		</nav>
+		</header>
+</div>
+
+<!--Sirver para serparar los container por medio de padding-->	
+<div class="separadorContainer"></div>
+
+
+<!--Cuerpo Secundario-->
+<div class="container"> 
+<h1 style="text-align: center;">Museo Interactivo de peces</h1>
+<br class="separadorContainer"><br>
+
+<section class="row"><!--1º fila-->
+<!--1º Columna Central--> 
+<div class="col-xs-12 col-sm-7 col-md-6">
+
+
+
+
+
+<!--Para poder hacer las opciones y q salga el texto--> 
+<!--El select tiene una id, a la q se le da un valor para luego convertirla en una var en el script  y se igualara a uno de los value segun la opcione elegida-->
+<select class="form-control" style="width: 50%" id="opcionElegida" onchange="miFuncion()">
+	<option value="opcion">Elija una opcion</option>
+	<option value="Betta blanco">Betta blanco</option>
+	<option value="Guppy multicolor">Guppy multicolor</option>
+	<option value="Escalar blanco">Escalar blanco</option>
+</select>
+<br>
+<!--Parrafo q se mostra cuando elijamos el pez-->
+<p> <i id="parrafoElegirOpcion"> </i></p>					
+		<p><b id="parrafo0"></b></p>
+		<p id="parrafo"></p>
+		<p id="parrafo1"></p>
+
+<p><b>Puedes cambiar el color del parrafo mediante el siguiente selector!!!!</b></p>
+
+<select onchange="color(this.value)">
+<option value="black">Default</option>
+<option value="red">Rojo</option>
+<option value="blue">Azul</option>
+<option selected value="green">Verde</option>
+
+</select>
+
+</div>
+
+<!--2º Columna-->
+<div class="col-xs-12 col-sm-5 col-md-6">
+
+
+
+
+
+
+
+    <form>
+		<!--Botones imagenes mostrar/ocultar-->
+ 	 	 <input class="btn btn-primary" type="button" onclick="mostrar('Betta blanco') & ocultar('Guppy multicolor') & ocultar('Escalar blanco')" value="Betta blanco">
+		
+  	 	<input class="btn btn-primary" type="button" onclick="mostrar('Guppy multicolor') & ocultar('Betta blanco') & ocultar('Escalar blanco')" value="Guppy multicolor">
+			
+ 	  	<input  class="btn btn-primary" type="button" onclick="mostrar('Escalar blanco') & ocultar('Betta blanco') & ocultar('Guppy multicolor')" value="Escalar blanco">
+			
+	
+		<!--Imagenes mostrar/ocultar-->
+
+  		 <img src="Betta blanco.jpg" class="oculto"  id="Betta blanco" style="padding-top: 2%">
+  		 <img src="Guppy multicolor.jpg" class="oculto" id="Guppy multicolor" style="padding-top: 2%">
+  		 <img src="Escalar blanco.jpg" class="oculto" id="Escalar blanco" width="23"style="padding-top: 2%">
+	</form>
+   
+
+	
+</div>
+
+
+
+</section><!--Termina la secion de la 1º fila-->
+<br class="separadorContainer"><br>
+<section class="row"><!--2º Fila-->
+	<div class="col-xs-12 col-sm-7 col-md-7"><!--1ºColumna-->
+<br class="separadorContainer"><br>
+<div  ng-app="ngAnimate"><!--Iniciamos al app de ocultar-->
+	<h2>Ocultar Peces Raros <input type="checkbox" ng-model="esconderDiv"></h2><!--declaramos el modelo relacion vinculando el valor de un campo de enrtada inmput a una variable creada en angularjs-->
+
+	<!--Declaramos la animacion enlazandolo al modelo en este caso es un imput de formato checkbox-->
+
+  	<div class="divEscondido" ng-hide="esconderDiv"><!-- Con la directiva ng-hide ocultamos los sDiv donde meteremos lo que queremos esconder-->
+
+    
+
+
+    	<h3>Peces Raros</h3>
+		<form>
+ 			 <input  type="radio" ng-model="myVar" value="pezLuna">Pez Luna<!--Declaramos el modelo-->
+ 			 <input type="radio" ng-model="myVar" value="pezDuende">Pez Duende
+ 			 <input type="radio" ng-model="myVar" value="pezDragon">Pez Dragon
+ 			 <input type="radio" ng-model="myVar" value="pezVivora">Pez Vivora
+
+		</form>
+
+		<div ng-switch="myVar"><!--Enlaza el ng-model ng-switch funcionara como un switch en cada div habrá una opcion que al pulsarlo con los imput se ejecutara-->
+  			<div ng-switch-when="pezLuna"><!--Opcion de pez luna -->
+     			<h4>Pez Luna </h4>
+     			<img src="https://www.depeces.com/wp-content/uploads/2018/01/descripci%C3%B3n-del-pez-luna.jpg" style="width: 45%">
+     			<p style="padding-top: 3%">Se trata de un pez cuyo tamaño puede alcanzar los 4 metros y cuyo peso puede ser de hasta una tonelada.
+    		 Pueden ser vistos prácticamente por todo el mundo y, aunque habitan en las profundidades, también les gusta salir a tomar el sol de vez en cuando. No suponen un peligro para las personas. De hecho, están familiarizados con los buzos y nadadores.</p>
+  			</div>
+
+  			<div ng-switch-when="pezDuende">
+    		 <h4>Pez Duende</h4>
+     			<img src="https://www.patatasmarinas.com/wp-content/uploads/post1_pez-duende.png" style="width: 45%">
+     		
+     			<p style="padding-top: 3%">Lo más característico de esta especie es su cabeza, que está rellena de un fluído y es totalmente transparente. Es 	decir, se le ve el cerebro. En ella contiene dos esferas que brillan en la oscuridad y dos ojos bastante extraños con 	forma tubular..</p>
+	  		</div>
+
+	  		<div ng-switch-when="pezDragon">
+	     		<h4>Pez Dragon Azul</h4>
+	    		 <img src="https://www.patatasmarinas.com/wp-content/uploads/post1_pez-dragon-azul-300x207.jpg" style="width: 45%">
+	    		 
+	    		 <p style="padding-top: 3%">El tamaño normal de esta especie varía entre 3 y 4 centímetros de largo. Sus colores azul y plateado le hacen destacar entre el resto de peces.</p>
+	  		</div>
+
+	  		<div ng-switch-when="pezVivora">
+	    		 <h4>Pez vívora de Sloane</h4>
+	    		 <img src="https://www.patatasmarinas.com/wp-content/uploads/post1_pez-vibora-300x215.jpg" style="width: 45%">
+	    		 
+	     		<p style="padding-top: 3%">Otra sorprendente criatura abisal, cuyos largos colmillos transparentes sobresalen cuando cierra la boca. Es capaz de emitir parpadeos luminosos para atraer a sus presas.</p>
+	  		</div>
+		</div><!--Termina el switch-->
+
+	 </div><!--Termina div de esconder-->
+
+</div><!--Termina la app de la animacion de esconder-->
+
+
+</div><!--Termina el div de la 1ºColumna-->
+
+
+	<div class="col-xs-12 col-sm-5 col-md-5"> <!--2º columna-->
+		<form ><!--Creamos el select con las diferentes opciones es importante donde pponga value se ponga el color hexadecimal o ingles-->
+			<h3>Elige una opcion para cambiar el fondo</h3>
+			<select class="form-control" style="width: 40%" id="seleccion" name="BackgroundChanguer" onchange="colorChangue()">
+				<option value="">Defaut</option>
+				<option value="red">Rojo</option>
+				<option value="cyan">Cian</option>
+				<option value="green">Verde</option>
+				<option value="yellow">Amarillo</option>
+				<option value="blue">Azul</option>
+			</select>	
+		</form>
+
+<h3>Puedes aumentar y disminur los parrafos de texto</h3>
+		<button id="baumentar" onclick="return cambiarTexto('+')">+ Aumentar</button>
+  <button id="bdisminuir" onclick="return cambiarTexto('-')">- Disminuir</button>
+
+
+
+
+
+	</div><!--Cierre de la 2º columna-->
+
+</section><!--Cierre de la segunda fila-->
+
+</div><!--Div de container cierre-->
+
+
+
+
+
+
+<!--Sirver para serparar los container por medio de padding-->
+<div class="separadorContainer"></div>
+
+<!--Pie de Pagina-->
+<div class="container pieFondo">
+	<footer >
+		<span class="copyright fas fa-copyright"></span> Copyright TropicMania 1970-2020			
+	</footer>
+</div><!--Fin de pie-->
+
+
+<div class="separadorBody"></div>
+
+<!-- Script de jquery.js y bootstrap.js -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!--Importacion de nuestro Javascript-->
+<script type="text/javascript" src="./javascript.js"></script>
+
+<!--ANGULARJS 1.6.9 SE REQUIERE PARA USAR ANGULARJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<!--Importacion de angular  ANGULAR ANIMADO 1.6.9-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+
+<!--Importacion iconos.js-->
+<script type="text/javascript" src="./iconos/js/all.min.js"></script>
+
+</body>
+
+</html>

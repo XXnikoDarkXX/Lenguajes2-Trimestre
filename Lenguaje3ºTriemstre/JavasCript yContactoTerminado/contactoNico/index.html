@@ -1,0 +1,232 @@
+
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!--Revisar Curisel-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Latest compiled and minified CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+ <link rel="stylesheet" type="text/css" href="./estilos.css">
+
+ <!-- IMPORTAMOS los css de ICONOS EN LA CARPETA ICONOS/css-->
+ <link rel="stylesheet" type="text/css" href="./css/all.min.css">
+
+
+<title>Contactar con el Equipo</title>
+	         
+<meta name="viewport" content="width=device-width, user-scalable=no, initial scale=1.0, maximum-scale=1.0, minimum-scalee=1.0">
+
+
+<style>
+/* Make the image fully responsive */
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+}
+
+</style>
+
+</head>
+
+
+<!--BODY-->
+
+<!--Cuerpo Primario-->
+<!--Para definir estilos iguales para elementos con el mismo nombre de clase-->
+<body class="site">
+
+<!--Sirver para serparar los container por medio de padding-->
+<div class="separadorBody"></div>
+
+<div class="container">
+
+	<header>	
+		<h1 style="text-align: left;">TropicMania</h1>
+		<!--Imagen-->
+	    <img class="imagenAcuario" src="./imagenAcuario.jpg">
+	</header>
+
+</div>
+	
+<!--Separador de container-->
+<div class="separadorContainer"></div>
+
+<!--Cuerpo Secundario-->
+<div class="container"> 
+	<!--1º Fila--> 
+	<section class="row">
+
+	<!--1º Columna Central--> 	
+	<div class="col-xs-12 col-sm-7 col-md-8">
+		<!--12 si es movil, 7 si es pequeño y 6 media o mas-->
+		<h1>El equipo del trabajo</h1>
+		<p><b>Nombre completo:</b> Nicolás Fernández Heredia</p>
+		<p><b>Sobre Mí:</b></p>
+		<p>Gran experto con doctorado en peces tropicales sus conocimientos van desde como la madre de Nemo muere hasta cuantos años tienen los tiburones.</p>
+		<p>Numerosos estudios sobre la capacidad de memoria de un pez es increible lo que pueden aguantar no!!!
+		Odio a las personas que tiran platico al mar. </p>
+		<p><b>Teléfono: </b>+34 657-44-09-76</p>
+		<p><b>Correo electrónico: </b>tropicnico@tropicmania.com</p>
+		<p> <b>Nombre Completo</b>Alejandro Ríos Díaz</p>
+		<p><b>Sobre Mí:</b></p>
+		<p>Pensador y filosofo en la materia, con reconocimiento a nivel internacional, acumulando años de experiencia en investigacion y desarrollo, varios doctorados y una trayectoria impecable.</p>
+		<p><b>Teléfono: </b>+34 757-47-59-06</p>
+		<p><b>Correo electrónico: </b>tropicale@tropicmania.com</p>
+	</div>
+
+	<!--2º Columna-->
+	<div class="color1 col-xs-12 col-sm-5 col-md-4">
+		<h3>Siguenos!!!</h3>
+		<p>
+			<span class=" Facebook fab fa-facebook-square"></span> Facebook:
+			<a href="#">Facebook</a>
+			<br>
+			<span class=" twitter fab fa-twitter-square"></span> Twitter:
+			<a href="#">Twitter</a>
+			<br>
+			<span class="instragram fab fa-instagram-square"></span> Instragram:
+			<a href="#">Instragram</a>
+			<br>
+			<span class="youtube  fab fa-youtube-square"></span> Youtube:
+			<a href="#">Youtube</a>
+		</p>
+			<br>
+			<!--Video-->
+			<div class="embed-responsive embed-responsive-16by9">
+ 				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQfrTmubDzM" allowfullscreen></iframe>
+			</div>
+			
+	</div>
+
+	<div class="clearfix visible-sm-block"></div>
+		
+	</section>
+<br>
+<br>
+	<!--2ºFila-->
+	<section class="row">
+	<!--1º Columna-->
+	<div class=" columnaImagen col-xs-12 col-sm-6 col-md-6">
+		<br>
+		<form action="" class=""> 	
+			<!--si ponemos disabled se desabilita todo siempre y cuando los ambitos se lleven hasta el final -->
+			<fieldset>
+				<div class="form-group">
+				<!--Nombre-->	
+						<!--Para validacion de errores se usa has-succes, debe haber un <label> con la clase control-label -->
+					<div class="has-success">
+						<label for="nombre" class="control-label">Nombre:</label>
+						<input style="width: 60%" type required="text" class="form-control" id="nombre" placeholder="Nombre">
+					</div>
+					<br>
+				<!--Correo-->
+					<div class="has-warning"> 
+						<label for="correo" class="control-label ">Correo:</label>
+						<div class="input-group ">			
+							<label class="sr-only" for="correo">Correo: </label>
+							<div class="input-group-addon">@</div>
+							<input style="width: 45%" class="form-control" id="correo" type="email" placeholder="Correo" required>
+						</div>
+					</div>
+					<br>
+				<!--Mensaje-->
+					<div class="form-group">
+						<label for="mensaje">Mensaje</label>
+						<textarea style=" line-height: 440% " class="form-control" id="" placeholder="Ecribe tu mensaje"></textarea>
+					</div>
+				<!--Recuerdame-->
+					<label>
+						<!--Lo podemos desabilitar con disabled-->
+						<input type="checkbox">	Recuerdame 
+					</label>
+				</div>
+			</fieldset>
+			<br>
+				<!--Enviar-->
+					<div style="padding-left: 50%">
+						<!--btn-primary  hace referencia a los distintos tipos de botones de Bootstrap-->
+						<button class="btn btn-primary">Enviar</button>
+					</div>
+			<!--Margen de separacion del botton-->
+			<div style="padding-top: 3%"></div>					
+		</form>
+	</div>
+
+<!--2º Columna-->
+<div  class="columnaImagen col-xs-12 col-sm-6 col-md-6">
+	<div class="imagenCarusel">
+		
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+		 	<!-- Indicators -->
+  			<ul class="carousel-indicators">
+   				<li data-target="#demo" data-slide-to="0" class="active"></li>
+   				<li data-target="#demo" data-slide-to="1"></li>
+   				<li data-target="#demo" data-slide-to="2"></li>
+  			</ul>
+
+ 	 		<!-- The slideshow -->
+  			<div class="carousel-inner">
+  				<!--Imagen-->
+  				<div class="carousel-item active">
+      				<img src="./imagen2.jpg" alt="pezDiscoRojo" >
+   				</div>
+   				<!--Imagen-->
+   				<div class="carousel-item">
+      				<img src="./imagen1.jpg" alt="pezDiscoAzulAmarillo" >
+   				</div>
+   				<!--Imagen-->
+  				<div class="carousel-item">      
+     				<img src="./imagen3.jpg" alt="pezAngel" >
+   				</div>
+ 			</div>
+  
+				<!-- Left and right controls -->
+ 				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+ 					<span class="carousel-control-prev-icon"></span>
+ 				</a>
+ 				<a class="carousel-control-next" href="#demo" data-slide="next">
+  					<span class="carousel-control-next-icon"></span>
+				</a>
+		</div>
+	</div>
+</div>
+		<!--Cierre section cuerpo secundario-->
+	</section>
+<!--Cierre container cuerpo secundario-->
+</div>
+
+<!--Separador de container-->
+<div class="separadorContainer"></div>
+
+<!--Div de container pie de pagina-->
+<div class="container pieFondo">
+	<footer >
+		<span class="copyright fas fa-copyright"></span> Copyright TropicMania 1970-2020			
+	</footer>
+
+
+</div>
+<div class="separadorBody"></div>
+<!--Importacion iconos.js-->
+<script type="text/javascript" src="./iconos/js/all.min.js"></script>
+
+<!-- Script de jquery.js y bootstrap.js  -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"crossorigin="anonymous"></script>
+
+</body>
+
+</html>

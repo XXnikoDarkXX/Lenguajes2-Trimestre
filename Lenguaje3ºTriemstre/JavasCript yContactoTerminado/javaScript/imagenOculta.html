@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+   <script>
+
+      function mostrar(id)
+
+      {
+
+         var objeto=document.getElementById(id)
+
+            objeto.style.display="block";
+
+      }
+
+      function ocultar(id)
+
+      {
+
+         var objeto=document.getElementById(id)
+
+            objeto.style.display="none";
+
+      }
+
+   </script>
+
+   <style>
+
+      .oculto {display:none;}
+
+   </style>
+
+</head>
+
+ 
+
+<body>
+
+<form>
+
+   <input type="button" onclick="mostrar('pez1') & ocultar('pez2')& ocultar('pez3')" value="Mostrar/ocultar pez 1">
+
+   <input type="button" onclick="mostrar('pez2') & ocultar('pez1') & ocultar('pez3')" value="Mostrar/ocultar pez 2">
+
+   <input type="button" onclick="mostrar('pez3') & ocultar('pez1') & ocultar('pez2')" value="Mostrar/ocultar pez 3">
+
+   <input type="button" onclick="mostrar('contenido2') & ocultar('contenido1')" value="Mostrar/ocultar contenido 2">
+
+   <img src="logoContacto.jpg" class="oculto"  id="pez1" width="20%">
+
+   <img src="acuario2.jpg" class="oculto" id="pez2">
+   <img src="acuario3.jpg" class="oculto" id="pez3">
+
+</form>
+
+</body>
+
+</html>
